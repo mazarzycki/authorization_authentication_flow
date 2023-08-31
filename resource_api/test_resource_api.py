@@ -1,4 +1,4 @@
-from ..resource_api.resource_api import app
+from resource_api import app
 import unittest
 from unittest.mock import patch
 
@@ -12,13 +12,13 @@ class TestResourceAPI(unittest.TestCase):
     def test_get_resource(self, mock_get, mock_token_hex):
         mock_response = mock_get.return_value
         mock_response.status_code = 200
-        mock_response.json.return_value = {"data": "This is your resource data"}
+        mock_response.json.return_value = {"data": "You have succesfully connected to the database. This is your resource data."}
 
         headers = {"Authorization": "Bearer test_auth_token"}
         response = self.app.get('/resource', headers=headers)
 
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.json, {"data": "This is your resource data"})
+        self.assertEqual(response.json, {"data": "You have succesfully connected to the database. This is your resource data."})
 
 if __name__ == '__main__':
     unittest.main()

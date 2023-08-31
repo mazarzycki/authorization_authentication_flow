@@ -1,5 +1,5 @@
 import unittest
-from ..authorization_server.authorization_server import app
+from authorization_server import app
 from unittest.mock import patch
 
 class TestAuthorizationServer(unittest.TestCase):
