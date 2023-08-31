@@ -12,7 +12,7 @@ The project demonstrates a simple token-based authentication flow where a client
 
 **client.py**: Simulates the interaction between a client and the resource API, including obtaining an authentication token and using it to access the resource.
 
-The flow can can be seen on the chart:
+The flow can be seen on the chart:
 
 ![Authentication flow](diagram.jpg)
 
@@ -27,7 +27,7 @@ The server will run on http://localhost:8000.
 2. Resource API:
 
 Run the resource API using the following command:
-`python resource_api.py`
+`python resource_api.py`  
 
 The API will run on http://localhost:8001.
 
@@ -42,8 +42,11 @@ The client script simulates the authentication process, prompting you to enter a
 - Python 3.x
 - Flask
 - Requests
+  
 Install the required dependencies using the following command:
-`pip install flask requests`
+`pip install flask requests`  
+or using the **requirements.txt** file from the main directory of the repository using:  
+`pip install -r requirements.txt` 
 
 ### **Contributing**
 This project is a basic example, but contributions are welcome! Feel free to fork the repository and submit pull requests.
