@@ -42,6 +42,7 @@ The client script simulates the authentication process, prompting you to enter a
 - Python 3.x
 - Flask
 - Requests
+  
 Install the required dependencies using the following command:
 `pip install flask requests`
 
