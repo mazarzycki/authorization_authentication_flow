@@ -12,7 +12,7 @@ The project demonstrates a simple token-based authentication flow where a client
 
 **client.py**: Simulates the interaction between a client and the resource API, including obtaining an authentication token and using it to access the resource.
 
-The flow can can be seen on the chart:
+The flow can be seen on the chart:
 
 ![Authentication flow](diagram.jpg)
 
