@@ -36,7 +36,7 @@ The API will run on http://localhost:8001.
 Run the client script using the following command:
 `python client.py`
 
-The client script simulates the authentication process, prompting you to enter an authentication token. If the token matches the one obtained from the authorization server, it accesses the resource API and displays the protected resource data.
+The client script simulates the authentication process, prompting you to enter an authentication token. The token is created by the authorization server and needs to be copied from there. If the pasted token matches the one obtained from the authorization server, it accesses the resource API and displays the protected resource data.
 
 ### **Dependencies**
 - Python 3.x
